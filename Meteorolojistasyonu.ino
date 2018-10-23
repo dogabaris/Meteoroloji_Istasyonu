@@ -167,7 +167,7 @@ void sendData(float inTemp,float inHumid){
 void sendSms(){
   Serial1.print("AT+CMGF=1\r"); // Set the shield to SMS mode
   delay(100);
-  Serial1.println("AT+CMGS=\"+905355635461\"");
+  Serial1.println("AT+CMGS=\"+90TELNO\"");
   delay(100);
   Serial1.println(windSpeMax);
   delay(100);
